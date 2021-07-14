@@ -1,0 +1,1 @@
+  <link href="static/blog/aboutf.css" rel="stylesheet">

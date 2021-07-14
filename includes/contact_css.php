@@ -1,0 +1,1 @@
+  <link href="static/blog/contact.css" rel="stylesheet">
