@@ -1,1 +1,1 @@
-  <link href="static/blog/contact.css" rel="stylesheet">
+  <link href="https://jakbin.github.io/blog/contact.css" rel="stylesheet">

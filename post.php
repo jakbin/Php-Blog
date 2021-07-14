@@ -62,7 +62,7 @@ $row = $stmt->fetch();
 
 
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('static/img/post-bg.jpg')">
+<header class="masthead" style="background-image: url('https://github.com/jakbin/blog/raw/main/post-bg.jpg')">  
   <div class="overlay"></div>
   <div class="container">
     <div class="row">

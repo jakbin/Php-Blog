@@ -51,7 +51,7 @@
 </nav>
 
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('static/img/home-bg.jpg');margin-bottom: 0px;">
+<header class="masthead" style="background-image: url('https://github.com/jakbin/blog/raw/main/home-bg.jpg')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">

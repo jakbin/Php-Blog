@@ -17,7 +17,7 @@
 </nav>
     <div class="containr">
         <div class="box">
-            <img src="static/blog/a.png" alt="">
+            <img src="https://github.com/jakbin/blog/raw/main/a.png" alt="">
             <span></span>
             <div class="content">
                 <h2>Dhruv Jagdish</h2>

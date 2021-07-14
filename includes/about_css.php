@@ -1,1 +1,1 @@
-  <link href="static/blog/aboutf.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://jakbin.github.io/blog/aboutf.css">
