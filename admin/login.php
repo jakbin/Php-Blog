@@ -1,9 +1,16 @@
 <?php require_once('includes/connect.php') ?>
 <?php
 session_start();
+if (! isset($_SESSION['token'])) {
+        $_SESSION['token'] = bin2hex(random_bytes(32));
+    }
 
 $message = '';
 if (isset($_POST['submit'])) {
+    if (!empty($_POST['token'])) {
+    
+        if (hash_equals($_SESSION['token'], $_POST['token'])) {
+
     $user = $_POST['user'];
     $user = filter_var($user, FILTER_SANITIZE_STRING);
     $pass = $_POST['pass'];
@@ -25,12 +32,19 @@ if (isset($_POST['submit'])) {
                     $_SESSION['user'] = $user;
             header('location:index.php');
             }else{
-              $message = "wrong password";
+              $message = "wrong password or username";
             }          
             
         } else{
             $message = "wrong username or password";
         }
+
+        }else{
+        die("csrf token validation failed");
+        }
+    } else{
+        die("csrf token not available");
+    }
 }
 
 ?>
@@ -207,6 +221,7 @@ section .container .contactform .formbox .inputbox input[type="submit"]:hover
             <div class="contactform">
                 <h2>Login</h2>
                 <form class="formbox" action="login.php" method="POST">
+                     <input type="hidden", name="token", value='<?php echo $_SESSION["token"] ?>'/>
                 
                     <div class="inputbox w50">
                         <input type="text" id="uname" name="user" placeholder="User Name" required>
