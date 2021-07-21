@@ -6,7 +6,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/jakbin/flask)
 
-![Php 7+](https://img.shields.io/badge/7+-green.svg)
+![Php 7+](https://img.shields.io/badge/php-7.4+-green.svg)
 
 ## Todo-List 
 
