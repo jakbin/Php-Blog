@@ -16,4 +16,4 @@
 - [ ] Uploaded Images Viewer
 - [X] About Page Improvements
 - [ ] Post View counter 
-- [ ] Improve Search Functionality
+- [ ] Search Functionality
